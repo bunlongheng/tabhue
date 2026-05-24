@@ -1,0 +1,12 @@
+# compiled binary
+/tabhue
+# build/dist output
+/dist/
+# go
+*.test
+*.out
+coverage.txt
+# os / editor
+.DS_Store
+.idea/
+.vscode/

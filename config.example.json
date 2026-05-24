@@ -1,0 +1,7 @@
+{
+  "projects": [
+    { "path": "/Users/you/Sites/portfolio", "label": "PORTFOLIO", "color": "#2563EB", "icon": "🌐" },
+    { "path": "/Users/you/Sites/api",       "label": "API",       "color": "#34C759", "icon": "⚙️" },
+    { "path": "/Users/you/Sites/notes",     "label": "NOTES",     "color": "#FFCC00", "icon": "📝" }
+  ]
+}
