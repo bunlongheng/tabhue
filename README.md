@@ -64,7 +64,7 @@ tabhue apply        # also color a freshly opened tab
 ```json
 {
   "projects": [
-    { "path": "/Users/you/Sites/api", "label": "API", "color": "#34C759", "icon": "A" }
+    { "path": "/Users/you/Sites/api", "label": "API", "color": "#34C759", "icon": "⚙️" }
   ]
 }
 ```
