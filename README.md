@@ -93,6 +93,25 @@ deepest matching `path` wins, so nested projects work.
 Tab color (`OSC 6`) is an iTerm2 extension; titles work in most terminals. A directory
 with no match is a silent no-op, so it is safe to wire into a shell hook.
 
+## Scope
+
+`tabhue` is a standalone tab colorizer. It sets the tab title and color using terminal
+escape sequences, and that is all it does.
+
+It deliberately does **not**:
+
+- change your working directory - a child process cannot `cd` its parent, so that stays
+  in whatever shell function calls it
+- set the background image, blend, cursor or bold colors - those need iTerm2's own
+  scripting API, which has no escape-sequence equivalent for blend
+- launch or supervise anything
+
+If you want a richer per-project setup (background image, tinted background, a theme that
+follows the tab color), wrap `tabhue` in a shell function and let that function handle the
+parts only a shell or the iTerm2 Python API can reach. `tabhue` is the portable piece: no
+Python environment, no dependencies, one binary that works over SSH and in any terminal
+that honors the escape codes.
+
 ## License
 
 [MIT](LICENSE)
